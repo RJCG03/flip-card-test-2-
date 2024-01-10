@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <title>Flip Card</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="front" style="background-image: url(https://source.unsplash.com/random/350x500?nature);"></div>
+      <div class="back">
+        <h1>Nature</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed venenatis mi. Etiam bibendum condimentum convallis. Sed sem lacus, placerat a ultrices vitae, lacinia in nunc. Proin lobortis et odio ac ultricies. In ac condimentum felis. Donec quam tellus, auctor ut nisi eget, suscipit posuere libero. Vestibulum euismod pellentesque eros, nec suscipit nunc mattis a. Duis nec ex neque. Fusce ac lectus id augue gravida tempus. Proin semper felis maximus mauris auctor, vel mattis metus egestas. Fusce euismod ante velit, ut suscipit enim varius a. Mauris faucibus enim a purus accumsan imperdiet. Aliquam dapibus porta nisl et sagittis. Morbi eu tellus felis. Integer erat massa, lacinia vel est id, cursus facilisis velit. Morbi hendrerit interdum orci sed interdum.
+            
+             </p>
+      </div> 
+    </div>
+    <div class="card">
+      <div class="front" style="background-image: url(https://source.unsplash.com/random/350x500?city);"></div>
+      <div class="back">
+        <h1>City</h1>
+        <p>Description for City</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="front" style="background-image: url(https://source.unsplash.com/random/350x500?tech);"></div>
+      <div class="back">
+        <h1>Technology</h1>
+        <p>Description for Technology</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.card').forEach(function(card) {
+        card.addEventListener('click', function() {
+            card.classList.toggle('flipped');
+        });
+    });
+    
+</script>
+</body>
+</html>
